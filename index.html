@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillGrow – Your Personalized AI Learning Pathway</title>
+  <meta name="description" content="SkillGrow: AI-powered personalized learning roadmaps for college students. Built by CodeStars." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <!-- Navigation / Header -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="SkillGrow home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.09 6.26L20 9l-5 3.64L16.18 20 12 16.9 7.82 20 9 12.64 4 9l5.91-.74L12 2z"/></svg>
+        <span>SkillGrow</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home" aria-label="Hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        <span class="title-top">SkillGrow</span>
+        <span class="title-sub">Your Personalized AI Learning Pathway</span>
+      </h1>
+      <p class="hero-tagline">Empowering students to learn smarter with AI</p>
+      <p class="team-caption">by <strong>CodeStars</strong> — Turning Ideas into Digital Stars ✨</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#features">Get Started</a>
+        <a class="btn btn-ghost" href="#demo">See Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about" aria-label="About SkillGrow">
+    <div class="container grid-2">
+      <div class="card glass reveal">
+        <h2>Problem</h2>
+        <p>Students often struggle to identify weak areas and structure their learning efficiently. With scattered resources and limited guidance, progress can be slow and untracked.</p>
+      </div>
+      <div class="card glass reveal">
+        <h2>Solution</h2>
+        <p><strong>SkillGrow</strong> uses AI to assess skills, generate a personalized learning roadmap, and recommend targeted resources. Collaborate with peers, track progress, and iterate as you grow.</p>
+      </div>
+    </div>
+    <div class="container benefits reveal">
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.59L8.41 12 10 10.41l3 3 5-5L19.59 10 13 16.59z"/></svg>
+        <div>
+          <h3>Efficiency</h3>
+          <p>Laser-focus on what matters most to improve faster.</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v2H3V4zm2 4h14v12H5V8zm2 2v8h10v-8H7z"/></svg>
+        <div>
+          <h3>Structure</h3>
+          <p>Clear step-by-step roadmap with milestones and outcomes.</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-3.33 0-10 1.67-10 5v1h20v-1c0-3.33-6.67-5-10-5z"/></svg>
+        <div>
+          <h3>Peer Connect</h3>
+          <p>Find peers at similar levels to collaborate and stay motivated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features" aria-label="Features">
+    <div class="container">
+      <h2 class="section-title">AI-Powered Features</h2>
+      <div class="features-grid">
+        <!-- Feature Card: AI Quiz -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21h6v-2H9v2zM12 2a7 7 0 00-7 7c0 2.76 1.5 5.16 3.75 6.39L9 17h6l.25-1.61A7.002 7.002 0 0012 2z"/></svg>
+          </div>
+          <h3>AI Skill Assessment Quiz</h3>
+          <p>Identify strengths and gaps across domains with a quick interactive quiz.</p>
+          <a href="#demo" class="link">Try it below</a>
+        </article>
+        <!-- Feature Card: Roadmap -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h10v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+          </div>
+          <h3>Smart Roadmap Generator</h3>
+          <p>Dynamic roadmap tailored to your goals and current level.</p>
+          <a href="#demo" class="link">Generate roadmap</a>
+        </article>
+        <!-- Feature Card: Recommendations -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h3>Course & Resource Picks</h3>
+          <p>Curated learning resources from trusted platforms, mapped to your path.</p>
+        </article>
+        <!-- Feature Card: Progress -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2V4h-2v13zm4 0h2V9h-2v8z"/></svg>
+          </div>
+          <h3>Progress Tracker</h3>
+          <p>Motivating visuals to track skills, streaks, and milestones.</p>
+        </article>
+        <!-- Feature Card: Peer Connect -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05C16.67 13.84 19 15 19 16.5V19h5v-2.5C24 14.17 18.33 13 16 13z"/></svg>
+          </div>
+          <h3>Peer Connect</h3>
+          <p>Study buddies and groups matched by goals and level.</p>
+        </article>
+        <!-- Feature Card: Chatbot -->
+        <article class="feature-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C7.03 3 3 6.58 3 11c0 2.05.93 3.92 2.46 5.36L5 21l4.02-2.15c.93.26 1.92.4 2.98.4 4.97 0 9-3.58 9-8s-4.03-8-9-8z"/></svg>
+          </div>
+          <h3>Chatbot Assistant</h3>
+          <p>Ask questions and get instant guidance on your path.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="section" id="demo" aria-label="Demo">
+    <div class="container">
+      <h2 class="section-title">Interactive Demo</h2>
+      <div class="demo-grid">
+        <!-- AI Quiz Panel -->
+        <div class="card glass demo-panel reveal" id="quizPanel">
+          <h3>AI Skill Assessment Quiz</h3>
+          <p class="muted">Rate yourself 1 (low) to 5 (high).</p>
+          <form id="quizForm" class="quiz-form" novalidate>
+            <div class="field-group">
+              <label for="domain">Preferred domain</label>
+              <select id="domain" name="domain" required>
+                <option value="">Select a domain</option>
+                <option>DSA</option>
+                <option>Web Dev</option>
+                <option>AI/ML</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label>Algorithms & Data Structures</label>
+              <div class="range-row">
+                <input type="range" min="1" max="5" value="3" name="dsa" aria-label="DSA rating" />
+                <span class="range-val" data-for="dsa">3</span>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Web Fundamentals (HTML/CSS/JS)</label>
+              <div class="range-row">
+                <input type="range" min="1" max="5" value="3" name="web" aria-label="Web rating" />
+                <span class="range-val" data-for="web">3</span>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Python & Scripting</label>
+              <div class="range-row">
+                <input type="range" min="1" max="5" value="3" name="python" aria-label="Python rating" />
+                <span class="range-val" data-for="python">3</span>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Math for AI (Linear Algebra, Stats)</label>
+              <div class="range-row">
+                <input type="range" min="1" max="5" value="3" name="math" aria-label="Math rating" />
+                <span class="range-val" data-for="math">3</span>
+              </div>
+            </div>
+            <div class="actions">
+              <button type="submit" class="btn btn-primary">Analyze with AI</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Roadmap Panel -->
+        <div class="card glass demo-panel reveal" id="roadmapPanel">
+          <h3>Personalized Roadmap</h3>
+          <p class="muted">Generated from your self-assessment. Click a module to expand.</p>
+          <div id="roadmapContainer" class="roadmap"></div>
+        </div>
+
+        <!-- Progress Preview Panel -->
+        <div class="card glass demo-panel reveal" id="progressPanel">
+          <h3>Progress Tracker Preview</h3>
+          <div class="progress-grid">
+            <div class="ring" data-value="68">
+              <div class="ring-inner">68%</div>
+              <div class="ring-label">Skill Mastery</div>
+            </div>
+            <div class="ring" data-value="42">
+              <div class="ring-inner">42%</div>
+              <div class="ring-label">Weekly Goal</div>
+            </div>
+            <div class="ring" data-value="5" data-max="7">
+              <div class="ring-inner">5/7</div>
+              <div class="ring-label">Streak</div>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="shuffleProgress" class="btn btn-ghost">Shuffle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section" id="team" aria-label="Team">
+    <div class="container">
+      <h2 class="section-title">Meet <span class="accent">CodeStars</span></h2>
+      <div class="team-grid">
+        <div class="teammate reveal">
+          <img alt="Harish" src="https://api.dicebear.com/8.x/identicon/svg?seed=Harish" />
+          <h4>Harish</h4>
+          <p class="muted">AI/Backend</p>
+        </div>
+        <div class="teammate reveal">
+          <img alt="Prashanth" src="https://api.dicebear.com/8.x/identicon/svg?seed=Prashanth" />
+          <h4>Prashanth</h4>
+          <p class="muted">Full-Stack</p>
+        </div>
+        <div class="teammate reveal">
+          <img alt="Akash" src="https://api.dicebear.com/8.x/identicon/svg?seed=Akash" />
+          <h4>Akash</h4>
+          <p class="muted">Frontend</p>
+        </div>
+        <div class="teammate reveal">
+          <img alt="Sai" src="https://api.dicebear.com/8.x/identicon/svg?seed=Sai" />
+          <h4>Sai</h4>
+          <p class="muted">DevOps</p>
+        </div>
+        <div class="teammate reveal">
+          <img alt="Jagadeesh" src="https://api.dicebear.com/8.x/identicon/svg?seed=Jagadeesh" />
+          <h4>Jagadeesh</h4>
+          <p class="muted">Mobile</p>
+        </div>
+        <div class="teammate reveal">
+          <img alt="Trinadh" src="https://api.dicebear.com/8.x/identicon/svg?seed=Trinadh" />
+          <h4>Trinadh</h4>
+          <p class="muted">Research</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact" aria-label="Contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="card glass reveal" novalidate>
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <div class="card glass reveal qr-card">
+          <h3>Quick Access</h3>
+          <p class="muted">Scan to open the demo or find us on GitHub.</p>
+          <img id="qrImage" alt="QR code to SkillGrow demo" src="" width="160" height="160" />
+          <div class="links">
+            <a id="demoLink" href="#top" class="link">Open Demo</a>
+            <a id="githubLink" href="https://github.com/CodeStars/SkillGrow" target="_blank" rel="noopener" class="link">GitHub</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Twitter" class="social">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.7.3-1.5.6-2.3.7.8-.5 1.4-1.2 1.7-2.1-.8.5-1.7.9-2.6 1.1C18 4.6 17 4 15.8 4c-2.2 0-3.9 2-3.4 4.1-3.1-.2-5.9-1.6-7.7-3.8C3.8 6 4.3 7.5 5.5 8.3c-.6 0-1.2-.2-1.7-.5 0 1.7 1.2 3.2 2.9 3.6-.5.1-1 .2-1.6.1.4 1.4 1.8 2.5 3.4 2.5C7.1 15 5.4 15.5 3.6 15.3 5.2 16.3 7.2 17 9.4 17c6.4 0 10-5.5 9.8-10.4.7-.5 1.4-1.2 1.8-1.9z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.5-2.7 5.1-2.7 5.5 0 6.5 3.6 6.5 8.2V24h-5v-7.9c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24h-5V8z"/></svg>
+            </a>
+            <a href="https://github.com/CodeStars/SkillGrow" aria-label="GitHub" class="social" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.9 3.2 9 7.6 10.4.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.4-3.8-1.4-.6-1.5-1.4-1.9-1.4-1.9-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.7 1 .1-.8.4-1.3.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.1 1.1-2.8-.1-.3-.5-1.6.1-3.3 0 0 .9-.3 3 .1.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.1-.4 3-.1 3-.1.6 1.7.2 3 .1 3.3.7.7 1.1 1.6 1.1 2.8 0 4.3-2.6 5.2-5.1 5.5.4.4.7 1 .7 2.1v3.1c0 .3.2.7.8.6 4.4-1.4 7.6-5.5 7.6-10.4C23.1 5.3 18.3.5 12 .5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> SkillGrow • Built with ❤️ by CodeStars</p>
+        <a href="#top" class="link">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Widget -->
+  <div class="chatbot" id="chatbot" aria-live="polite" aria-label="Chatbot assistant">
+    <button class="chat-toggle" id="chatToggle" aria-expanded="false" aria-controls="chatWindow">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C7 3 3 6.6 3 11c0 1.9.8 3.7 2.2 5.1L5 21l4-2.1c.9.3 1.9.4 3 .4 5 0 9-3.6 9-8s-4-8-9-8z"/></svg>
+      <span>Ask AI</span>
+    </button>
+    <div class="chat-window" id="chatWindow" hidden>
+      <div class="chat-header">
+        <strong>SkillGrow Assistant</strong>
+        <button class="icon-btn" id="chatClose" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body" id="chatBody" role="log"></div>
+      <form class="chat-input" id="chatForm">
+        <input type="text" id="chatText" placeholder="Ask about your roadmap..." aria-label="Message" required />
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
